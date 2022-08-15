@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Dialog } from '@capacitor/dialog';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -14,5 +15,14 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  constructor() { }
+  
+  public async onLabelClick(label: string) {
+    console.log(event, label);
+    await Dialog.alert({
+      title: 'Message',
+      message: 'Selected label: ' + label,
+    });
+  }
+
 }
