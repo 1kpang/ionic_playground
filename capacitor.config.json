@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "Playground",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "com.conpak.playground",
+  "appName": "Playground",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
